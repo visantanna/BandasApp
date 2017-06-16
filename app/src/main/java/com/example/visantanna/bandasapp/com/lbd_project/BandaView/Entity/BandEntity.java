@@ -18,6 +18,15 @@ public class BandEntity {
     private List<ContatoEntity> listaContatos;
     private String sDescricaoBanda;
     private List<ReviewsEntity> listaReviews;
+    private int IdUser;
+
+    public int getIdUser() {
+        return IdUser;
+    }
+
+    public void setIdUser(int idUser) {
+        IdUser = idUser;
+    }
 
     public double getAverageRating() {
         return averageRating;

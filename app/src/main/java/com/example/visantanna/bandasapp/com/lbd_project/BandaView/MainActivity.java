@@ -1,13 +1,12 @@
 package com.example.visantanna.bandasapp.com.lbd_project.BandaView;
 
-import android.content.DialogInterface;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
@@ -107,5 +106,6 @@ public class MainActivity extends AppCompatActivity {
         //backgroundImageBanda.setImageAlpha(200);
         backgroundImageBanda.setColorFilter(R.color.colorGrey);
     }
+
 
 }

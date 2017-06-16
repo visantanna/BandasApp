@@ -9,4 +9,7 @@
     <string name ="Pagode">Pagode</string>
     <string name ="Get_in_touch">Get in touch!</string>
     <string name ="Outros_contatos">"Outros contatos:"</string>
+    <string name ="Agenda_shows">"Agendas de Shows"</string>
+    <string name ="DigiteAqui">"Digite sua nota aqui!"</string>
+    <string name ="Salvar">" Salvar "</string>
 </resources>

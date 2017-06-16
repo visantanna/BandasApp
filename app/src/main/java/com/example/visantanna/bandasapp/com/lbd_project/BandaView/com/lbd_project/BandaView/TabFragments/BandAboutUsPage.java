@@ -29,7 +29,6 @@ public class BandAboutUsPage extends BaseFragment implements View.OnClickListene
     private List<Integer> listaTiposQueContemIcones = Arrays.asList(5,8,10);
     private ArrayList<ContatoEntity> listaIcones = new ArrayList<ContatoEntity>();
     private View view;
-    private int numeroDeIcones = 0;
 
 
     public BandAboutUsPage(){
@@ -58,10 +57,12 @@ public class BandAboutUsPage extends BaseFragment implements View.OnClickListene
         return view;
     }
     private void setListaDeContatos(List<ContatoEntity> contatos){
-        ArrayList<ContatoEntity> listaDeContatos = (ArrayList<ContatoEntity>) contatos;
-        for(ContatoEntity contato : listaDeContatos){
+
+        for(ContatoEntity contato : contatos){
+            int numeroDeIcones = 0;
             try {
                 int tipo = contato.getiTypeContact();
+                numeroDeIcones ++;
                 if (listaTiposQueContemIcones.contains(contato.getiTypeContact()) && numeroDeIcones < 3) {
                     ImageView icon = null;
                     switch (numeroDeIcones) {
@@ -122,12 +123,12 @@ public class BandAboutUsPage extends BaseFragment implements View.OnClickListene
 
     public void enterImageLink(int number){
 
-        if(number < numeroDeIcones ) {
-            ContatoEntity contato = listaIcones.get(number);
-            Uri uri = Uri.parse(contato.getsValue());
-            Intent chamadaDoPrograma = new Intent(Intent.ACTION_VIEW, uri);
-            startActivity(chamadaDoPrograma);
-        }
+    if(listaIcones.get(number) != null) {
+        ContatoEntity contato = listaIcones.get(number);
+        Uri uri = Uri.parse(contato.getsValue());
+        Intent chamadaDoPrograma = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(chamadaDoPrograma);
+    }
 }
 
     @Override

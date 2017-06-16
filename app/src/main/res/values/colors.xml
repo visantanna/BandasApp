@@ -8,4 +8,10 @@
     <color name="colorLightBlue">#67C8FF</color>
     <color name="colorCornFlowerBlue">#6495ED</color>
     <color name="colorGrey">#808080</color>
+    <color name="Licorice">#292929</color>
+    <color name="Concrete">#95A5A6</color>
+    <color name="Wisteria">#8E44AD</color>
+    <color name="Carrot">#CC6600</color>
+    <color name="DarkRed">#D64A4A</color>
+    <color name="BackGround">#EFEFF4</color>
 </resources>
